@@ -18,7 +18,7 @@ const mockTasks = [
 ];
 
 export default function TasksPage() {
-  const [tasks, setTasks] = useState(mockTasks);
+  const [tasks] = useState(mockTasks);
 
   const handleTaskClick = (task: typeof mockTasks[0]) => {
     alert(`Clicked task: ${task.title}`);
