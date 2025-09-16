@@ -1,7 +1,22 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
+
+import { Button } from "./components/ui/Button";
+
 function Home() {
-  return <h1 className="text-2xl">Главная страница</h1>;
+  return (
+     <div className="space-y-4">
+      <h1 className="text-2xl font-bold">Главная страница</h1>
+      <Button>Кнопка из UI</Button>
+      {/* <Badge variant="outline">Метка</Badge>
+      <div className="flex items-center gap-2">
+        <Avatar>
+          <AvatarFallback>JD</AvatarFallback>
+        </Avatar> */}
+        {/* <span>John Doe</span>
+      </div> */}
+    </div>
+  )
 }
 
 function Tasks() {
